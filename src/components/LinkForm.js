@@ -5,7 +5,8 @@ function LinkForm ({addLink}) {
     const initialValues = {
         url: '',
         name: '',
-        description:''
+        description:'',
+        date: new Date()
       }
 
     const [ values, setValues ] = useState(initialValues)
@@ -76,7 +77,7 @@ function LinkForm ({addLink}) {
 
         <div className="row">
             <div className="col s12">
-                <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+                <button className="btn waves-effect waves-light indigo lighten-1" type="submit" name="action">Submit
                 <i className="material-icons right">send</i>
             </button>
             </div>
